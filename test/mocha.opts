@@ -1,0 +1,5 @@
+--reporter spec
+--require test/before.js
+--require test/list.js
+--ui bdd
+--grep myObj
