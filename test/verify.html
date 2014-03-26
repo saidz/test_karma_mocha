@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>AutoNavi HTML5 MAP API TEST</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/mocha/mocha.css">
+    <script type="text/javascript" src="lib/bower_components/mocha/mocha.js"></script>
+    <script type="text/javascript" src="lib/bower_components/chai/chai.js"></script>
+    <script type="text/javascript" src="lib/sinon.js"></script>
+    <script type="text/javascript" src="lib/should.js"></script>
+    <script type="text/javascript" src="lib/expect.js"></script>
+    <script type="text/javascript" src="lib/sinon-chai.js"></script>
+    <script>
+      mocha.setup('bdd');
+      expect = chai.expect;
+      should = chai.should();
+    </script>
+    <!-- include source files here... -->
+    <script type="text/javascript" src="../src/myobj.js"></script>
+    <!-- include spec files here... -->
+    <script type="text/javascript" src="test.js"></script>
+
+    <script>
+      mocha.checkLeaks();
+      onload = function(){
+        mocha.run();
+      };
+    </script>
+
+    <style>
+      body{
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>

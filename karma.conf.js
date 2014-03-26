@@ -23,7 +23,9 @@ module.exports = function(config) {
         exclude: [
             'test/mocha.opts',
             'test/before.js',
-            'test/list.js'
+            'test/list.js',
+            'test/lib/*',
+            'test/verify.html'
         ],
 
 
