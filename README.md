@@ -1,4 +1,4 @@
-## MVCObject 
+## test\_karma\_mocha
 A simple demo which test with karma and mocha.
 
 ### test
